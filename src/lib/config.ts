@@ -1,6 +1,6 @@
 const CONFIG = {
   jsDocs: {
-    apis: ['./src/app/api/routes/route.ts'],
+    apis: ['./routes-files/route.ts'],
     swagger: "2.0",
     swaggerDefinition: {
       info: {
