@@ -1,5 +1,7 @@
-/src
+/app
 /node_modules
 .env
 tsconfig.json
 tsup.config.ts
+markdown-files
+routes-files

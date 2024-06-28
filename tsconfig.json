@@ -2,33 +2,47 @@
   "display": "Node LTS",
   "_version": "20.1.0",
   "compilerOptions": {
+    "baseUrl": ".",
     "lib": [
-      "es2023"
+      "es2023",
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+
     ],
     "outDir": "dist",
-    "module": "node16",
+    "module": "ESNext",
     "target": "es2022",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
-    "moduleResolution": "node16",
+    "moduleResolution": "Bundler",
     "allowJs": true,
     "noEmit": true,
     "incremental": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "allowImportingTsExtensions": true,
     "jsx": "preserve",
     "plugins": [
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "contentlayer/generated": ["./.contentlayer/generated"]
+    }
+    
   },
+  
   "include": [
     "src/index.ts",
-    ".next/types/**/*.ts"
+    ".next/types/**/*.ts",
+    
   ],
+  
   "exclude": [
     "node_modules"
   ]
