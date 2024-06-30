@@ -45,15 +45,15 @@ program
       console.log(chalk.green(`Successfully created GitHub repository: ${repo.full_name}`));
 
       
-      execSync('git init', { stdio: 'inherit' });
-      execSync('git add .', { stdio: 'inherit' });
-      execSync('git commit -m "Initial commit"', { stdio: 'inherit' });
-      try {
-        execSync('git remote rm origin', { stdio: 'inherit' });
-      } catch (error) {
-      }
-      execSync(`git remote add origin https://github.com/${repo.owner.login}/${repo.name}.git`, { stdio: 'inherit' });
-      execSync('git push -f origin main', { stdio: 'inherit' });
+      // execSync('git init', { stdio: 'inherit' });
+      // execSync('git add .', { stdio: 'inherit' });
+      // execSync('git commit -m "Initial commit"', { stdio: 'inherit' });
+      // try {
+      //   execSync('git remote rm origin', { stdio: 'inherit' });
+      // } catch (error) {
+      // }
+      // execSync(`git remote add origin https://github.com/${repo.owner.login}/${repo.name}.git`, { stdio: 'inherit' });
+      // execSync('git push -f origin main', { stdio: 'inherit' });
 
       console.log(chalk.green('Local repository has been pushed to GitHub.'));
 
